@@ -1,4 +1,12 @@
-# Add this to .bashrc
+# Robot auto-start
+* Enable Auto-login in raspi-config
+* sudo apt install screen
+* Fill-up additional files (see below)
+* reboot
+
+The startup terminal will be available under screen ROBOT. screen -ls to list screens, screen -x to attach see screen utility help.
+
+## Add this to .bashrc
 
 ```sh
 echo "Source ROS"
@@ -20,7 +28,7 @@ then
 fi
 ```
 
-# ~/launch_robot.sh
+## ~/launch_robot.sh
 
 ```sh
 roslaunch camera_ws/config/camera.launch remote_ws/config/remote.launch
