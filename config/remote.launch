@@ -1,0 +1,4 @@
+<launch>
+  <node type="remote_cmd.py" pkg="remote_cmd" name="remote1" output="screen">
+  </node>
+</launch>
