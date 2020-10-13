@@ -19,3 +19,9 @@ then
         screen -d -m -S ROBOT ~/launch_robot.sh
 fi
 ```
+
+# ~/launch_robot.sh
+
+```sh
+roslaunch camera_ws/config/camera.launch remote_ws/config/remote.launch
+```
